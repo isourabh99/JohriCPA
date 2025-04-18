@@ -38,12 +38,9 @@ function Nav() {
   return (
     <nav className="py-4 px-2 md:px-24 flex items-center justify-between text-white">
       {/* Logo */}
-      <img
-        src={logo}
-        alt="Johri CPA logo"
-        className="w-20 md:w-24"
-        loading="eager"
-      />
+     <Link to={"/"}>
+        <img src={logo} alt="Logo" className="w-30" />  
+        </Link>
 
       <div className="text-lg items-center gap-6 md:gap-10 hidden md:flex text-black">
         {navitems.map((item, idx) =>

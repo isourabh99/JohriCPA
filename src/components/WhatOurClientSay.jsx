@@ -4,31 +4,32 @@ import ClientsCard from './ClientsCard';
 function WhatOurClientSay() {
     const clientsCards = [
       {
-        src: `https://s3-alpha-sig.figma.com/img/5371/1eff/67b689309eb8138b640562a727188338?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=svJqBSZdtHdAG-6aLbd94K~bpzQQAU4jSGWoM1z2vK-QpLwPhGTm3p48WkF-DDuuIb4CPRrA0wx~RjRYX08~FSDJo5pq5oQIH2zzATOv700vgpz2cVkx3BOlpZNONwiPndSJ6f2w9gLlmrUjCy0Zh2tkFsDPPBBipDkz9wV8v~VkZgzrY3Eb9gSQb5-sjgv1sKKx2ljWyEfblpVjVUmORmt0fA~JIiKzzqjpzZwhsbbP2XqpTXOZ1yJwqmYWXnWtOnbww0yFNHQ~UQvibTYIvo7RcgN1FbHgJWV82Qd8m6rSSUanFUXb9-epXh6fV3qceRffkX-o-tDhaD842yZeFQ__`,
+        src: `https://i.pinimg.com/474x/e7/33/8a/e7338a374bb3d7f83f1b0e90b836b144.jpg`,
         rating: 3,
         desc: `Manhar and the RMP team are exceptional! They are my go to for all tax related needs. I highly recommend RMP to my personal and professional networks.`,
-        client: "Sourabh Soni",
+        client: "Neha Patel",
         time: `2 months ago`,
       },
       {
-        src: `https://s3-alpha-sig.figma.com/img/5371/1eff/67b689309eb8138b640562a727188338?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=svJqBSZdtHdAG-6aLbd94K~bpzQQAU4jSGWoM1z2vK-QpLwPhGTm3p48WkF-DDuuIb4CPRrA0wx~RjRYX08~FSDJo5pq5oQIH2zzATOv700vgpz2cVkx3BOlpZNONwiPndSJ6f2w9gLlmrUjCy0Zh2tkFsDPPBBipDkz9wV8v~VkZgzrY3Eb9gSQb5-sjgv1sKKx2ljWyEfblpVjVUmORmt0fA~JIiKzzqjpzZwhsbbP2XqpTXOZ1yJwqmYWXnWtOnbww0yFNHQ~UQvibTYIvo7RcgN1FbHgJWV82Qd8m6rSSUanFUXb9-epXh6fV3qceRffkX-o-tDhaD842yZeFQ__`,
-        rating: 3,
+        src: `https://i.pinimg.com/474x/ca/8a/ca/ca8acae43c6cd08b09f5c66f90abed71.jpg`,
+        rating: 2,
         desc: `Manhar and the RMP team are exceptional! They are my go to for all tax related needs. I highly recommend RMP to my personal and professional networks.`,
         client: "Sourabh Soni",
+        time: `6 months ago`,
+      },
+      {
+        src: `https://i.pinimg.com/474x/b5/55/02/b555027a561b8955c445ce8fec67c346.jpg`,
+
+        rating: 4,
+        desc: `Manhar and the RMP team are exceptional! They are my go to for all tax related needs. I highly recommend RMP to my personal and professional networks.`,
+        client: "Priya Mehta",
         time: `2 months ago`,
       },
       {
-        src: `https://s3-alpha-sig.figma.com/img/5371/1eff/67b689309eb8138b640562a727188338?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=svJqBSZdtHdAG-6aLbd94K~bpzQQAU4jSGWoM1z2vK-QpLwPhGTm3p48WkF-DDuuIb4CPRrA0wx~RjRYX08~FSDJo5pq5oQIH2zzATOv700vgpz2cVkx3BOlpZNONwiPndSJ6f2w9gLlmrUjCy0Zh2tkFsDPPBBipDkz9wV8v~VkZgzrY3Eb9gSQb5-sjgv1sKKx2ljWyEfblpVjVUmORmt0fA~JIiKzzqjpzZwhsbbP2XqpTXOZ1yJwqmYWXnWtOnbww0yFNHQ~UQvibTYIvo7RcgN1FbHgJWV82Qd8m6rSSUanFUXb9-epXh6fV3qceRffkX-o-tDhaD842yZeFQ__`,
-        rating: 3,
+        src: `https://i.pinimg.com/474x/8d/95/03/8d9503a77e4c21ebf0ced6c252819a0e.jpg`,
         desc: `Manhar and the RMP team are exceptional! They are my go to for all tax related needs. I highly recommend RMP to my personal and professional networks.`,
-        client: "Sourabh Soni",
-        time: `2 months ago`,
-      },
-      {
-        src: `https://s3-alpha-sig.figma.com/img/5371/1eff/67b689309eb8138b640562a727188338?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=svJqBSZdtHdAG-6aLbd94K~bpzQQAU4jSGWoM1z2vK-QpLwPhGTm3p48WkF-DDuuIb4CPRrA0wx~RjRYX08~FSDJo5pq5oQIH2zzATOv700vgpz2cVkx3BOlpZNONwiPndSJ6f2w9gLlmrUjCy0Zh2tkFsDPPBBipDkz9wV8v~VkZgzrY3Eb9gSQb5-sjgv1sKKx2ljWyEfblpVjVUmORmt0fA~JIiKzzqjpzZwhsbbP2XqpTXOZ1yJwqmYWXnWtOnbww0yFNHQ~UQvibTYIvo7RcgN1FbHgJWV82Qd8m6rSSUanFUXb9-epXh6fV3qceRffkX-o-tDhaD842yZeFQ__`,
-        desc: `Manhar and the RMP team are exceptional! They are my go to for all tax related needs. I highly recommend RMP to my personal and professional networks.`,
-        rating: 3,
-        client: "Sourabh Soni",
+        rating: 5,
+        client: "Arjun Nair",
         time: `2 months ago`,
       },
     ];

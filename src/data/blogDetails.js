@@ -1,17 +1,18 @@
-import blog1 from "../assets/blog1.png";
-import blog2 from "../assets/blog2.png";
+import blog1 from "../assets/blog1.jpg";
+import blog2 from "../assets/blog2.jpg";
 import blog1part2 from "../assets/blog1part2.png";
 import blog2part2 from "../assets/blog2part2.png";
-import userDp from "../assets/userdp.png";
+import userDp from "../assets/userdp.jpg";
 const blogsData = [
   {
     src: blog1,
     title: "The Future of Mobile App Development & Quality Assurance",
     desc: `The production of mobile apps is a profitable industry. According to statistics, there are over 6.5 million mobile apps available across different app stores.Also, the app market is booming due to the fact that over 5 billion people use smartphones. The prediction that the mobile app market will reach approximately USD 583.03 billion by the end of 2030 is not surprising.The future of the mobile app development business is bright, in fact. But breaking into the market is harder than it seems.To stand out in this crowded market, you have to be the greatest at whatever you do. It takes effort to provide a useful app, from market research to development, quality control, and app upkeep.`,
     desc2: `A crucial phase in the creation of mobile apps is quality assurance. It guarantees that you’re providing your users with the greatest experience possible.Quality assurance is an anticipatory procedure that saves you money, time, and users. It also aids in increasing the likelihood that your mobile application will succeed.However, your mobile app will suffer in a number of ways if the development approach you use does not have a sufficient quality assurance stage. QA is a crucial process for the following reasons.`,
-    postedByDp: userDp,
+    postedByDp:
+      "https://i.pinimg.com/474x/8d/95/03/8d9503a77e4c21ebf0ced6c252819a0e.jpg",
     desc3: `A crucial phase in the creation of mobile apps is quality assurance. It guarantees that you’re providing your users with the greatest experience possible.Quality assurance is an anticipatory procedure that saves you money, time, and users. It also aids in increasing the likelihood that your mobile application will succeed.However, your mobile app will suffer in a number of ways if the development approach you use does not have a sufficient quality assurance stage. QA is a crucial process for the following reasons. A crucial phase in the creation of mobile apps is quality assurance. It guarantees that you’re providing your users with the greatest experience possible.Quality assurance is an anticipatory procedure that saves you money, time, and users. It also aids in increasing the likelihood that your mobile application will succeed.However, your mobile app will suffer in a number of ways if the development approach you use does not have a sufficient quality assurance stage. QA is a crucial process for the following reasons.`,
-    postedByName: "Sourabh Soni",
+    postedByName: "Arjun Nair",
     postedOn: "April 2, 2025",
     features: [
       "Boost in Profit",

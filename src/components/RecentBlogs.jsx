@@ -1,10 +1,9 @@
 import React from "react";
-import user from "../assets/userdp.png";
+import user from "../assets/userdp.jpg";
 import { Link } from "react-router-dom";
-import blog1 from "../assets/blog1.png"
-import blog2 from "../assets/blog2.png"
+import blog1 from "../assets/blog1.jpg"
+import blog2 from "../assets/blog2.jpg"
 import blog3 from "../assets/blog3.png"
-import userDp from "../assets/userdp.png";
 
 function RecentBlogs() {
   const blogsH = [
@@ -12,8 +11,9 @@ function RecentBlogs() {
       src: blog1,
       title: `Business Update – 10 October 2024`,
       desc: `Welcome to our Weekly Digest – stay in the know with some recent news updates relevant to business and Welcome to our Weekly Digest – stay in the know with some and`,
-      postedByDp: userDp,
-      postedByName: `Sourabh Soni`,
+      postedByDp:
+        "https://i.pinimg.com/474x/8d/95/03/8d9503a77e4c21ebf0ced6c252819a0e.jpg",
+      postedByName: `Arjun Nair`,
       postedOn: `July 30, 2024`,
       to: "/blog:id",
     },
@@ -22,7 +22,7 @@ function RecentBlogs() {
       title: `8 factors to consider before investing`,
       desc: `Welcome to our Weekly Digest – stay in the know with some recent news updates relevant to business and Welcome to our Weekly Digest – stay in the know with some and `,
       postedByDp: user,
-      postedByName: `Sourabh Soni`,
+      postedByName: `Rajesh Sharma`,
       postedOn: `July 30, 2024`,
     },
   ];
@@ -102,7 +102,7 @@ function RecentBlogs() {
             </p>
             <div className="flex gap-4 items-center ">
               <img
-                src={user}
+                src={`https://i.pinimg.com/474x/ca/8a/ca/ca8acae43c6cd08b09f5c66f90abed71.jpg`}
                 alt="User profile picture"
                 loading="lazy"
                 className="h-7 w-7 md:w-10 md:h-10 rounded-full object-center object-cover"

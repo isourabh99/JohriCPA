@@ -25,7 +25,7 @@ function ClientsCard({ src, desc, rating = 0, client, time }) {
           rel="preload"
           src={src}
           alt="Client"
-          className="w-20 rounded-full border-4 border-white mx-auto"
+          className="w-20  h-20 rounded-full border-4 border-white mx-auto object-center object-cover"
         />
         <p className="text-white font-semibold mt-2">{client}</p>
 
