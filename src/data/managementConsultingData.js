@@ -2,7 +2,7 @@ const managementConsultingData = {
   title: "Management Consulting Services",
   welcomeMessage: "Welcome to Johri CPA",
   introduction:
-    "At Johri CPA, we provide comprehensive management consulting services designed to help businesses achieve their goals and enhance performance. Our expertise spans across various sectors, ensuring tailored solutions that address specific challenges and opportunities.",
+    "Strategic management consulting designed to elevate your business performance. We dive deep into your operations, identify growth barriers, and implement effective solutions. Whether it's restructuring, performance optimization, or market entry strategy—we drive measurable results. Partner with us for expert guidance and sustainable success.",
   services: [
     {
       title: "Strategic Planning",

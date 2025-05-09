@@ -1,43 +1,42 @@
 import blog1 from "../assets/blog1.jpg";
 import blog2 from "../assets/blog2.jpg";
+import blog3 from "../assets/success.avif";
 import blog1part2 from "../assets/blog1part2.png";
 import blog2part2 from "../assets/blog2part2.png";
+import blog3part2 from "../assets/success.avif"; // Add your third blog part image here
 import userDp from "../assets/userdp.jpg";
+
 const blogsData = [
-  {
-    src: blog1,
-    title: "The Future of Mobile App Development & Quality Assurance",
-    desc: `The production of mobile apps is a profitable industry. According to statistics, there are over 6.5 million mobile apps available across different app stores.Also, the app market is booming due to the fact that over 5 billion people use smartphones. The prediction that the mobile app market will reach approximately USD 583.03 billion by the end of 2030 is not surprising.The future of the mobile app development business is bright, in fact. But breaking into the market is harder than it seems.To stand out in this crowded market, you have to be the greatest at whatever you do. It takes effort to provide a useful app, from market research to development, quality control, and app upkeep.`,
-    desc2: `A crucial phase in the creation of mobile apps is quality assurance. It guarantees that you’re providing your users with the greatest experience possible.Quality assurance is an anticipatory procedure that saves you money, time, and users. It also aids in increasing the likelihood that your mobile application will succeed.However, your mobile app will suffer in a number of ways if the development approach you use does not have a sufficient quality assurance stage. QA is a crucial process for the following reasons.`,
-    postedByDp:
-      "https://i.pinimg.com/474x/8d/95/03/8d9503a77e4c21ebf0ced6c252819a0e.jpg",
-    desc3: `A crucial phase in the creation of mobile apps is quality assurance. It guarantees that you’re providing your users with the greatest experience possible.Quality assurance is an anticipatory procedure that saves you money, time, and users. It also aids in increasing the likelihood that your mobile application will succeed.However, your mobile app will suffer in a number of ways if the development approach you use does not have a sufficient quality assurance stage. QA is a crucial process for the following reasons. A crucial phase in the creation of mobile apps is quality assurance. It guarantees that you’re providing your users with the greatest experience possible.Quality assurance is an anticipatory procedure that saves you money, time, and users. It also aids in increasing the likelihood that your mobile application will succeed.However, your mobile app will suffer in a number of ways if the development approach you use does not have a sufficient quality assurance stage. QA is a crucial process for the following reasons.`,
-    postedByName: "Arjun Nair",
-    postedOn: "April 2, 2025",
-    features: [
-      "Boost in Profit",
-      "Cost Effective",
-      "Lower the Churn Rate",
-      "Requirements Clarity",
-    ],
-    title2: `Inside the app development process, what is quality assurance?`,
-    desc4: `Let's talk about the quality assurance procedure in app development first.An integral part of the process of developing a mobile app is quality assurance, or QA. Testing your mobile app is a step before releasing it to the public.Finding and resolving bugs and other usability problems is the main goal of the quality assurance process. The aim is to offer a flawless user experience by guaranteeing that the application is free of bugs and functions flawlessly across all platforms and operating systems.It's true that you cannot create a perfect software. The goal of the quality assurance process is to reduce problems and improve user experience for mobile apps, not to create perfect ones.In the quality assurance phase, problems including bugs, sluggish load times, and unclear navigation are found and fixed.`,
-    blogpart2: blog1part2,
-  },
+{
+  src: blog1,
+  title: "The Future of Taxation & Accounting in a Digital World",
+  desc: `The accounting and taxation industry is undergoing a major shift driven by cloud solutions, AI tools, and evolving compliance laws...`,
+  desc2: `Accurate financial reporting and timely tax compliance have become strategic functions in modern business. Accountants are no longer just bookkeepers—they're proactive advisors ensuring business continuity and regulatory confidence.`,
+  postedByDp:
+    "https://i.pinimg.com/474x/8d/95/03/8d9503a77e4c21ebf0ced6c252819a0e.jpg",
+  desc3: `Digital tools like cloud-based ledgers and automated tax software have transformed how firms handle reporting, audits, and real-time financial oversight. Accountants are expected to embrace tech without compromising accuracy.`,
+  postedByName: "Arjun Nair",
+  postedOn: "April 2, 2025",
+  features: [
+    "Improved Accuracy & Compliance",
+    "Cost-Efficient Operations",
+    "Real-Time Financial Insights",
+    "Streamlined Reporting Processes",
+  ],
+  title2: `How Technology is Reshaping Tax Preparation and Accounting Services`,
+  desc4: `The integration of digital tools, such as AI-powered tax calculators and cloud accounting platforms, is revolutionizing traditional workflows. Professionals now focus more on analysis, strategic planning, and real-time advising rather than just year-end filing.`,
+  blogpart2: blog1part2,
+}
+,
   {
     src: blog2,
     title: "8 Factors to Consider Before Investing",
-    desc: `Investing is a crucial financial decision that can shape your future wealth and security. However, before diving into any investment opportunity, it is essential to evaluate multiple factors to minimize risks and maximize returns. Understanding the market landscape, identifying your financial goals, and analyzing potential risks are all critical steps in making informed investment decisions. Whether you are a beginner or an experienced investor, being aware of these factors can help you make smart and strategic choices that align with your long-term financial success.`,
-
-    desc2: `Every investor has unique objectives, risk tolerance, and financial constraints. Before making an investment, you need to assess your personal financial situation, including your income, expenses, existing assets, and future needs. This will help you determine how much you can invest without affecting your financial stability. Moreover, market conditions play a significant role in investment success. Studying trends, analyzing historical performance, and keeping up with economic news can provide valuable insights into where and when to invest. Understanding how different investment options—stocks, bonds, real estate, or cryptocurrencies—perform in various economic scenarios can also guide you in making well-informed decisions.`,
-
+    desc: `Investing is a crucial financial decision that can shape your future wealth...`,
+    desc2: `Every investor has unique objectives, risk tolerance, and financial constraints...`,
     postedByDp: userDp,
-
-    desc3: `Risk management is one of the most critical aspects of investing. Before putting your money into any asset, consider how much risk you are willing to take. Some investments, such as stocks and cryptocurrencies, come with high volatility and potential rewards, while others, like bonds and fixed deposits, offer stability with lower returns. Diversification is a key strategy to mitigate risks—spreading your investments across different assets reduces the impact of market fluctuations on your overall portfolio. Additionally, liquidity is another vital factor—how quickly you can convert your investment into cash without significant losses. Investing in highly liquid assets ensures you have access to funds when needed, making it a safer strategy for financial security.`,
-
+    desc3: `Risk management is one of the most critical aspects of investing...`,
     postedByName: "Sourabh Soni",
     postedOn: "April 2, 2025",
-
     features: [
       "Assess Your Risk Tolerance",
       "Understand Market Trends",
@@ -48,12 +47,30 @@ const blogsData = [
       "Check Regulatory Compliance",
       "Set Clear Investment Goals",
     ],
-
     title2: `How to Make Smarter Investment Decisions?`,
-
-    desc4: `Smart investing is about knowledge, patience, and strategy. It’s essential to conduct thorough research before committing to any investment. Start by reviewing financial reports, understanding industry trends, and consulting with experts if necessary. Avoid impulsive decisions based on market hype or emotions—many investors fall into the trap of following trends without analyzing the long-term impact. Additionally, always consider economic conditions before investing. Inflation, interest rates, and government policies can significantly influence investment returns. Lastly, setting clear investment goals helps you stay on track. Define whether your objective is wealth accumulation, retirement planning, or passive income generation, and choose investments that align with your goals. A well-structured investment plan, combined with continuous learning, can help you build a strong and profitable portfolio over time.`,
-
+    desc4: `Smart investing is about knowledge, patience, and strategy...`,
     blogpart2: blog2part2,
   },
+  {
+    src: blog3,
+    title: "Succession Planning: A Will for Your Business",
+    desc: `Succession planning is more than just drafting a will — it's about creating a sustainable transition strategy for your business...`,
+    desc2: `Most business owners don’t take proper holidays, often due to a lack of delegation and planning. Succession planning ensures your company can continue thriving even in your absence.`,
+    postedByDp:
+      "https://i.pinimg.com/474x/ca/8a/ca/ca8acae43c6cd08b09f5c66f90abed71.jpg",
+    desc3: `Whether you're planning to retire, sell, or simply step away temporarily, a clear plan ensures operational continuity and stakeholder confidence. It also reduces disruptions and keeps your team aligned.`,
+    postedByName: "Sourabh Soni",
+    postedOn: "April 10, 2025",
+    features: [
+      "Business Continuity",
+      "Strategic Delegation",
+      "Employee Morale",
+      "Leadership Preparation",
+    ],
+    title2: `Why Every Business Needs a Succession Plan`,
+    desc4: `Without a plan, even the most successful business can stumble. Succession planning offers clarity, protects your legacy, and supports future leadership. It’s a proactive move for long-term growth and stability.`,
+    blogpart2: blog3part2, // Update this to the correct path if needed
+  },
 ];
+
 export default blogsData;

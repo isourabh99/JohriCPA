@@ -11,34 +11,41 @@ import BusinessIncorporation from "./pages/BusinessIncorporation";
 import Taxation from "./pages/Taxation";
 import ManagementConsulting from "./pages/ManagementConsulting";
 import Footer from "./components/Footer";
+import TopContactMarquee from "./components/TopContactMarquee";
+import USTaxFilling from "./pages/USTaxFilling";
+import ScrollToTop from "./hooks/ScrollToTop";
 
 
 
 function App() {
   return (
-    <Router>
-    
-      <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<BlogDetails />} />
-        <Route path="/contact" element={<Contact />} />
+    <>
+      <Router>
+        <TopContactMarquee />
+        <Nav />
+    <ScrollToTop/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogDetails />} />
+          <Route path="/contact" element={<Contact />} />
 
-        <Route path="/services/accounting" element={<Accounting />} />
-        <Route
-          path="/services/business-incorporation"
-          element={<BusinessIncorporation />}
-        />
-        <Route path="/services/taxation" element={<Taxation />} />
-        <Route
-          path="/services/management-consulting"
-          element={<ManagementConsulting />}
-        />
-      </Routes>
-      <Footer />
-    </Router>
+          <Route path="/services/accounting" element={<Accounting />} />
+          <Route
+            path="/services/business-incorporation"
+            element={<BusinessIncorporation />}
+          />
+          <Route path="/services/taxation" element={<Taxation />} />
+          <Route
+            path="/services/management-consulting"
+            element={<ManagementConsulting />}
+          />
+          <Route path="/services/us-tax-filling" element={<USTaxFilling />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </>
   );
 }
 

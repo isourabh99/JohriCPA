@@ -16,7 +16,12 @@ function Blog() {
       />
 
       <main>
-        <Banner src={blogbanner} heading="Blog" button="Contact Us" />
+        <Banner
+          src={blogbanner}
+          heading="Blogs"
+          button="Contact Us"
+          desc="Explore our in-depth articles, expert opinions, and the latest updates from the world of technology and digital transformation. Whether you're looking to stay ahead of trends, gain insights into our services, or learn from real-world case studies, our blog is your go-to resource for valuable information and inspiration."
+        />
 
         <section>
           <RecentBlogs />

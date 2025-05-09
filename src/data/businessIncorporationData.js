@@ -2,7 +2,7 @@ const businessIncorporationData = {
   title: "Business Incorporation Services",
   welcomeMessage: "Welcome to Johri CPA",
   introduction:
-    "At Johri CPA, we are dedicated to providing top-notch accounting services to businesses and individuals. Our team of experienced professionals is committed to helping you manage your finances efficiently and effectively. With our personalized approach, we ensure that all your accounting needs are met with precision and care.",
+    "Start your business journey with confidence through our expert incorporation services. We simplify complex legal and financial setups, guiding you every step of the way. From entity selection to compliance, we make sure you’re set up for long-term success. Launch smart, scale faster, and stay protected from day one.",
   services: [
     {
       title: "Business Formation",

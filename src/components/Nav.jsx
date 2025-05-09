@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo2.png";
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -10,6 +10,16 @@ import { useLocation } from "react-router-dom";
 function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   const location = useLocation();
   const service = {
     title: "Services",
@@ -24,6 +34,10 @@ function Nav() {
         name: "Management Consulting",
         path: "/services/management-consulting",
       },
+      {
+        name: "US Tax Filling",
+        path: "/services/us-tax-filling",
+      },
     ],
   };
 
@@ -36,11 +50,15 @@ function Nav() {
   ];
 
   return (
-    <nav className="py-4 px-2 md:px-24 flex items-center justify-between text-white">
+    <nav
+      className={`py-1 px-6 top-10 md:px-24 flex items-center justify-between text-white fixed z-50 w-full transition-all duration-300 ${
+        isScrolled ? "bg-white/80 shadow-md backdrop-blur opacity-80" : "bg-white"
+      }`}
+    >
       {/* Logo */}
-     <Link to={"/"}>
-        <img src={logo} alt="Logo" className="w-30" />  
-        </Link>
+      <Link to={"/"}>
+        <img src={logo} alt="Logo" className="w-30" />
+      </Link>
 
       <div className="text-lg items-center gap-6 md:gap-10 hidden md:flex text-black">
         {navitems.map((item, idx) =>
@@ -81,13 +99,13 @@ function Nav() {
       </div>
 
       {/* Consultation Button (Desktop) */}
-      <Link
+      {/* <Link
         to={"/contact"}
         className="bg-[#0a56ab] rounded text-white px-4 py-2 hidden  md:flex items-center gap-3 justify-center font-semibold hover:opacity-80 transition-all duration-500 ease-in-out cursor-pointer"
       >
         <RiCustomerService2Fill />
         Consultation
-      </Link>
+      </Link> */}
 
       {/* Mobile Menu Icon */}
       <RiMenu3Fill
@@ -99,8 +117,8 @@ function Nav() {
 
       {/* Mobile Navbar Links */}
       {isMenuOpen && (
-        <div className="md:hidden absolute z-50 top-0 left-0 right-0 bg-gray-800 text-black px-2 py-4 flex flex-col gap-4 h-full ">
-          <div className="flex justify-between items-center">
+        <div className="md:hidden absolute  z-50 top-0 left-0 right-0 bg-gray-800 text-black px-2 flex flex-col gap-4 h-screen ">
+          <div className="flex justify-between items-center ">
             <img src={logo} alt="Logo" className="w-30" />
             <IoCloseSharp
               onClick={() => {
@@ -154,10 +172,10 @@ function Nav() {
               </Link>
             )
           )}
-          <button className=" my-4 text-3xl bg-[#0a56ab] rounded text-white px-4 py-2 flex items-center gap-3 justify-center">
+          {/* <button className=" my-4 text-3xl bg-[#0a56ab] rounded text-white px-4 py-2 flex items-center gap-3 justify-center">
             <RiCustomerService2Fill />
             Consultation
-          </button>
+          </button> */}
         </div>
       )}
     </nav>

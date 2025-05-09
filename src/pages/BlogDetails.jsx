@@ -60,7 +60,7 @@ function BlogDetails() {
         </script>
       </Helmet>
 
-      <main className="px-2 md:px-24 flex gap-4 flex-col md:flex-row my-10">
+      <main className="px-2 md:px-20 mt-34 flex gap-4 flex-col md:flex-row my-10">
         <section className="md:w-3/4">
           <div className="w-full flex gap-4 flex-col md:flex-row">
             <img

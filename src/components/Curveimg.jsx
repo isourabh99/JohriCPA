@@ -10,7 +10,7 @@ function Curveimg({ rounded, src }) {
     }[rounded] || ""; // Default to empty string if not found
 
   return (
-    <div className={`overflow-hidden h-[50vh] sm:h-[60vh] md:h-100 `}>
+    <div className={`overflow-hidden h-[50vh] sm:h-[50vh] `}>
       <img
         rel="preload"
         src={src}

@@ -33,14 +33,14 @@ function WhoWeServe() {
    ];
 
   return (
-    <div className="bg-[#F3F2F7] py-10 my-10">
+    <div className="bg-[#F3F2F7]  py-10 my-10">
       <h1 className="text-[#0a56ab] text-center  font-semibold text-2xl md:text-3xl">
-        Who We Serve
+        What We Offer
       </h1>
       <p className=" text-center font-semibold md:text-xl mb-10 mt-4">
-        We’re covering all the accounting fields
+        All-in-One Accounting & Tax Services
       </p>
-      <div className="px-2 md:px-24 flex justify-between  flex-col md:flex-row w-full">
+      <div className="px-6 md:px-24 flex justify-between  flex-col md:flex-row w-full">
         {cards.map((card, idx) => (
           <Card
             key={idx}

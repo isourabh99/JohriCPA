@@ -2,7 +2,7 @@ const accountingServicesData = {
   title: "Accounting Services",
   welcomeMessage: "Welcome to Johri CPA",
   introduction:
-    "At Johri CPA, we are dedicated to providing top-notch accounting services to businesses and individuals. Our team of experienced professionals is committed to helping you manage your finances efficiently and effectively. With our personalized approach, we ensure that all your accounting needs are met with precision and care.",
+    "Comprehensive accounting solutions to manage your books with clarity and precision. From day-to-day bookkeeping to payroll and financial reporting, we ensure your operations stay compliant and efficient. Our team helps you make informed decisions through accurate, real-time financial insights. Let us handle the numbers, so you can focus on growing your business.",
   services: [
     {
       title: "Tax Preparation and Planning",

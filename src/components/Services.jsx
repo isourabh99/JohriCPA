@@ -3,16 +3,16 @@ import React from "react";
 
 function Services({ title, welcomeMessage, introduction, services }) {
   return (
-    <div className="px-2 md:px-24 my-10 ">
+    <div className="px-6 md:px-24 my-10 ">
       <p className="text-[#0a56ab]   font-semibold text-2xl md:text-4xl">
         {title}
       </p>
       <p className="my-4 text-xl font-semibold">{welcomeMessage}</p>
       <p className="my-4 text-gray-400 ">{introduction}</p>
-      <p className="my-4 text-[#0a56ab] font-semibold text-lg ">Our Services</p>
+      <p className="my-4 text-[#0a56ab] font-semibold text-xl ">Our Services</p>
       <div className="flex justify-between flex-wrap ">
         {services.map((service, idx) => (
-          <div className=" md:w-[45%] my-4" key={idx}>
+          <div className=" md:w-[45%] my-4 bg-blue-50 p-4 rounded" key={idx}>
             <p className="font-semibold text-2xl ">
               {idx + 1}. {service.title}
             </p>

@@ -20,7 +20,7 @@ function ClientsCard({ src, desc, rating = 0, client, time }) {
         className="absolute w-full left-0 bottom-0"
       />
 
-      <div className="absolute left-1/2 -translate-x-1/2 text-center">
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-center">
         <img
           rel="preload"
           src={src}

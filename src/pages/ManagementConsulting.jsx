@@ -1,8 +1,7 @@
 import React from "react";
 import SEO from "../components/SEO"; // Import SEO component
 import Banner from "../components/Banner";
-import servicesbanner from "../assets/servicesbanner.png";
-import managementconsulting from "../assets/managementconsulting.png";
+import managementcard from "../assets/managementcard.jpg";
 import Services from "../components/Services";
 import managementConsultingData from "../data/managementConsultingData";
 import WhyChooseJohri from "../components/WhyChooseJohri";
@@ -20,21 +19,13 @@ function ManagementConsulting() {
 
       <main>
         <Banner
-          src={servicesbanner}
+          src={managementcard}
           heading={"Services"}
           subheading={"Management Consulting"}
+          desc="Strategic management consulting designed to elevate your business performance. We dive deep into your operations, identify growth barriers, and implement effective solutions. Whether it's restructuring, performance optimization, or market entry strategy—we drive measurable results. Partner with us for expert guidance and sustainable success."
         />
 
-        <section className="px-2 md:px-24 overflow-hidden my-10">
-          <img
-            src={managementconsulting}
-            alt="Management Consulting Services Banner"
-            loading="lazy"
-            className="object-cover object-center h-70 w-full rounded-2xl"
-          />
-        </section>
-
-        <section>
+        <section id="services">
           <Services
             title={managementConsultingData.title}
             welcomeMessage={managementConsultingData.welcomeMessage}
@@ -44,7 +35,7 @@ function ManagementConsulting() {
         </section>
 
         <section>
-          <h3 className="px-2 md:px-24 text-[#0a56ab] text-2xl md:text-5xl font-semibold">
+          <h3 className=" text-[#0a56ab] text-2xl md:text-4xl text-center font-semibold">
             Why Choose Johri CPA?
           </h3>
           <WhyChooseJohri />

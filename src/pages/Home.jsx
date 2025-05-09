@@ -12,8 +12,8 @@ import OurPartners from "../components/OurPartners";
 const Home = () => {
   const homeBannerData = {
     src: homebannerbg,
-    title: `Tax and business advisory services for busy professionals`,
-    desc: `We’re here to help you meet the challenges of being a working professional. Our extensive experience providing professionals in Toronto and Mississauga with accounting services combined with our knowledge of innovative technology gives you a huge financial advantage.`,
+    title: `Personalized Tax & Accounting Solutions for Individuals, Small Businesses, and Professionals`,
+    desc: `We specialize in helping professionals and business owners navigate the complexities of tax and accounting with confidence. Backed by years of experience serving clients across the Greater Toronto Area and Kitchener-Waterloo, our team delivers reliable, tailored financial solutions that keep you compliant—and in control of your finances.`,
     button: `Get In Touch`,
   };
 
@@ -64,7 +64,7 @@ const Home = () => {
 
         {/* Our Partners Section */}
         <section id="our-partners">
-          <OurPartners />
+          {/* <OurPartners /> */}
         </section>
       </main>
     </>

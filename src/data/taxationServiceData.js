@@ -2,7 +2,7 @@
     title: "Taxation Services",
     welcomeMessage: "Welcome to Johri CPA",
     introduction:
-      "At Johri CPA, we are dedicated to providing top-notch accounting services to businesses and individuals. Our team of experienced professionals is committed to helping you manage your finances efficiently and effectively. With our personalized approach, we ensure that all your accounting needs are met with precision and care.",
+      "Expert taxation services tailored for both individuals and businesses. We ensure full compliance with local and international tax laws while identifying opportunities for savings and efficiency. With strategic planning and reliable support, we help you stay ahead of deadlines and audits.",
     services: [
       {
         title: "Individual Tax Services",
@@ -24,7 +24,8 @@
           },
           {
             title: "Amended Returns",
-            description: "Correction of errors on previously filed tax returns.",
+            description:
+              "Correction of errors on previously filed tax returns.",
           },
         ],
       },

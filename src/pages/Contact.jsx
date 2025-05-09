@@ -1,10 +1,9 @@
 import React from "react";
 import SEO from "../components/SEO"; // Import SEO component
 import Banner from "../components/Banner";
-import contactus from "../assets/contactus.png";
 import contactusgrowing from "../assets/contactusgrowing.png";
-import WeAreHere from "../components/WeAreHere";
-import ContactUsForm from "../components/ContactUsForm";
+import ContactBanner from "../components/ContactBanner ";
+import Locations from "../components/Locations";
 
 function Contact() {
   return (
@@ -18,9 +17,15 @@ function Contact() {
       />
 
       <main>
-        <Banner src={contactus} heading={"Contact Us"} />
+        <ContactBanner background="https://img.freepik.com/free-photo/contact-register-feedback-support-help-concept_53876-124243.jpg?t=st=1745499637~exp=1745503237~hmac=366642e83a8bc9b17d8a9b9ab562954434a949789985b7ce3916bf141f260518&w=996" />
+        <Locations />
+        {/* <Banner
+          src={contactusbanner}
+          heading={"Contact Us"}
+          desc="Have questions or need personalized guidance? Our team is here to help you every step of the way. Whether you're seeking expert advice, service inquiries, or partnership opportunities—we’re just a message away. Reach out today and let's build something great together."
+        /> */}
 
-        <section className="px-2 md:px-24 text-center my-10">
+        {/* <section className="px-2 md:px-24 text-center my-10">
           <h1 className="font-bold text-4xl my-4">
             Doorway to streamlined solutions
           </h1>
@@ -33,19 +38,19 @@ function Contact() {
 
         <section>
           <WeAreHere />
-        </section>
+        </section> */}
 
-        <section>
+        {/* <section>
           <Banner
             src={contactusgrowing}
             title2={`7 Steps To Growing Your Business`}
             desc2={`Enter your details below and sign up for our seven-day course full of useful tips on growing your business.`}
           />
-        </section>
+        </section> */}
 
-        <section>
+        {/* <section>
           <ContactUsForm />
-        </section>
+        </section> */}
       </main>
     </>
   );

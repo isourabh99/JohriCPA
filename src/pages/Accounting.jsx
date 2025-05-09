@@ -1,8 +1,7 @@
 import React from "react";
 import SEO from "../components/SEO"; // 🧠 Reusable SEO component
 import Banner from "../components/Banner";
-import servicesbanner from "../assets/servicesbanner.png";
-import accountservicebanner from "../assets/accountservicebanner.png";
+import accountingcard from "../assets/accountingcard.jpg";
 import Services from "../components/Services";
 import accountingServicesData from "../data/accountingServicesData";
 import WhyChooseJohri from "../components/WhyChooseJohri";
@@ -23,14 +22,15 @@ function Accounting() {
         {/* Header section with banner */}
         <header>
           <Banner
-            src={servicesbanner}
+            src={accountingcard}
             heading="Services"
             subheading="Accounting"
+            desc="Comprehensive accounting solutions to manage your books with clarity and precision. From day-to-day bookkeeping to payroll and financial reporting, we ensure your operations stay compliant and efficient. Our team helps you make informed decisions through accurate, real-time financial insights. Let us handle the numbers, so you can focus on growing your business."
           />
         </header>
 
         {/* Accounting Services Banner */}
-        <section
+        {/* <section
           id="accounting-services-banner"
           className="px-2 md:px-24 overflow-hidden my-10"
         >
@@ -40,10 +40,10 @@ function Accounting() {
             loading="lazy"
             className="object-cover object-center h-70 w-full rounded-2xl"
           />
-        </section>
+        </section> */}
 
         {/* Services Section */}
-        <section id="services">
+        <section id="services" >
           <Services
             title={accountingServicesData.title}
             welcomeMessage={accountingServicesData.welcomeMessage}
@@ -53,8 +53,8 @@ function Accounting() {
         </section>
 
         {/* Why Choose Johri Section */}
-        <section id="why-choose-johri" className="px-2 md:px-24 my-10">
-          <h3 className="text-[#0a56ab] text-2xl md:text-5xl font-semibold">
+        <section>
+          <h3 className=" text-[#0a56ab] text-2xl md:text-4xl text-center font-semibold">
             Why Choose Johri CPA?
           </h3>
           <WhyChooseJohri />

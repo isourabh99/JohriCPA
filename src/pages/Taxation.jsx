@@ -1,8 +1,7 @@
 import React from "react";
 import SEO from "../components/SEO"; // Import SEO component
 import Banner from "../components/Banner";
-import servicesbanner from "../assets/servicesbanner.png";
-import taxationbanner from "../assets/taxationbanner.png";
+import taxationcard from "../assets/taxationcard.jpg";
 import Services from "../components/Services";
 import taxationServiceData from "../data/taxationServiceData";
 import WhyChooseJohri from "../components/WhyChooseJohri";
@@ -20,21 +19,13 @@ function Taxation() {
 
       <main>
         <Banner
-          src={servicesbanner}
+          src={taxationcard}
           heading={"Services"}
           subheading={"Taxation"}
+          desc="Expert taxation services tailored for both individuals and businesses. We ensure full compliance with local and international tax laws while identifying opportunities for savings and efficiency. With strategic planning and reliable support, we help you stay ahead of deadlines and audits."
         />
 
-        <section className="px-2 md:px-24 overflow-hidden my-10">
-          <img
-            src={taxationbanner}
-            alt="Taxation Services Banner"
-            loading="lazy"
-            className="object-cover object-center h-70 w-full rounded-2xl"
-          />
-        </section>
-
-        <section>
+        <section id="services" >
           <Services
             title={taxationServiceData.title}
             welcomeMessage={taxationServiceData.welcomeMessage}
@@ -44,7 +35,7 @@ function Taxation() {
         </section>
 
         <section>
-          <h3 className="px-2 md:px-24 text-[#0a56ab] text-2xl md:text-5xl font-semibold">
+          <h3 className=" text-[#0a56ab] text-2xl md:text-4xl text-center font-semibold">
             Why Choose Johri CPA?
           </h3>
           <WhyChooseJohri />

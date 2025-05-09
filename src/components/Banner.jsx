@@ -1,58 +1,71 @@
 import React from "react";
 import { Link } from "react-router-dom";
-function Banner({ src, title, desc, button, heading,subheading ,title2,desc2}) {
+
+function Banner({
+  src,
+  title,
+  desc,
+  desc3,
+  button,
+  heading,
+  subheading,
+  title2,
+  desc2,
+}) {
   return (
-    <div className="relative w-full  sm:h-[50vh] md:h-[65vh] ">
+    <div className="relative w-full h-[35vh] md:h-[60vh] mt-34">
       <img
         src={src}
         rel="preload"
-        className="w-full h-full object-center object-cover"
         alt="banner"
         loading="lazy"
+        className="w-full h-full object-cover object-top"
       />
-      <div className="absolute top-0 px-6  md:px-16  md:py-8 text-white bg-[#0a55ab5e] h-full w-full">
-        {/* Conditional Rendering for Title */}
-        {title && (
-          <h1 className="text-xl  md:text-5xl md:mt-10 mt-6 md:w-[60%] ">
-            {title}
-          </h1>
-        )}
 
-        {/* Conditional Rendering for Description */}
+      <div className="absolute top-0 w-full h-full bg-[#0c3666a5] text-white px-6 md:px-24 md:py-8">
+        {/* Heading */}
+        {heading && (
+          <p className="text-2xl md:text-5xl font-semibold tracking-tighter mt-10  ">
+            {heading}
+          </p>
+        )}
+        {/* Subheading */}
+        {subheading && (
+          <p className="md:text-3xl mt-4">{subheading}</p>
+        )}
+        {/* Title */}
+        {title && (
+          <p className="text-2xl md:text-5xl mt-10 md:w-3/4">
+            {title}
+          </p>
+        )}
+        {/* Description */}
         {desc && (
-          <p className="text-sm sm:text-base md:text-xl my-4   md:w-[60%]  text-gray-300">
+          <p className="text-xs  md:text-xl text-gray-300 my-4 md:w-[60%]">
             {desc}
           </p>
         )}
-        {/* if only heading */}
-        {heading && (
-          <h1 className="text-2xl md:text-8xl font-semibold md:mt-20 mt-4 md:mb-6 tracking-tighter">
-            {heading}
-          </h1>
+        {desc3 && (
+          <p className="text-xs  md:text-xl text-gray-300 my-4 md:w-[60%]">
+            {desc3}
+          </p>
         )}
-        {/* if sub heading */}
-        {subheading && (
-          <p className="md:text-4xl font-semibold md:my-10">{subheading}</p>
+        {/* Centered Title2 and Desc2 */}
+        {(title2 || desc2) && (
+          <div className="md:w-1/2 mx-auto text-center ">
+            {title2 && (
+              <p className="md:text-5xl font-semibold mt-40 md:mt-20">
+                {title2}
+              </p>
+            )}
+            {desc2 && <p className="md:text-3xl text-gray-200 my-2">{desc2}</p>}
+          </div>
         )}
-        <div className="md:w-1/2 mx-auto">
-          {title2 && (
-            <p className="md:text-6xl font-semibold md:mt-20 mt-6 text-center">
-              {title2}
-            </p>
-          )}
-          {/* if desc2 */}
-          {desc2 && (
-            <p className="md:text-3xl text-gray-200 my-2 text-center">
-              {desc2}
-            </p>
-          )}
-        </div>
-        {/* if title2 */}
-        {/* Conditional Rendering for Button */}
+        {/* CTA Button */}
         {button && (
           <Link
-            to={"/contact"}
-            className="px-4 py-2 md:mt-10 block w-fit mt-4 bg-white rounded text-[#0a56ab] font-semibold hover:opacity-80 transition-all duration-500 ease-in-out cursor-pointer"
+            to="/contact"
+            className="bg-white text-[#0a56ab] font-semibold rounded text-xs md:text-base px-4 py-2 mt-4 md:mt-10 w-fit block hover:opacity-80 transition-all duration-500 ease-in-out"
           >
             {button}
           </Link>
