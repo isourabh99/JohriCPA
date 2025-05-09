@@ -30,23 +30,17 @@ function Banner({
           </p>
         )}
         {/* Subheading */}
-        {subheading && (
-          <p className="md:text-3xl mt-4">{subheading}</p>
-        )}
+        {subheading && <p className="md:text-3xl mt-4">{subheading}</p>}
         {/* Title */}
-        {title && (
-          <p className="text-2xl md:text-5xl mt-10 md:w-3/4">
-            {title}
-          </p>
-        )}
+        {title && <p className="text-2xl md:text-5xl mt-6 lg:w-3/4">{title}</p>}
         {/* Description */}
         {desc && (
-          <p className="text-xs  md:text-xl text-gray-300 my-4 md:w-[60%]">
+          <p className="text-xs  md:text-xl text-gray-300 my-4 lg:w-3/4">
             {desc}
           </p>
         )}
         {desc3 && (
-          <p className="text-xs  md:text-xl text-gray-300 my-4 md:w-[60%]">
+          <p className="text-xs  md:text-xl text-gray-300 my-4 lg:w-3/4">
             {desc3}
           </p>
         )}
