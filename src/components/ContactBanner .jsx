@@ -56,7 +56,7 @@ function ContactBanner({ background }) {
       style={{ backgroundImage: `url(${background})` }}
     >
       <div className="absolute inset-0 bg-black/80 z-0" />
-      <div className="relative z-10 w-full px-6 md:px-20">
+      <div className="relative z-10 w-full px-6 lg:px-24">
         <form
           onSubmit={handleSubmit}
           className="w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6"

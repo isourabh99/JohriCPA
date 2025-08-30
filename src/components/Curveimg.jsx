@@ -15,7 +15,7 @@ function Curveimg({ rounded, src }) {
         rel="preload"
         src={src}
         alt="Curved Image"
-        className={`h-full object-cover ${roundedClass} `}
+        className={`w-full h-full object-cover ${roundedClass} `}
       />
     </div>
   );

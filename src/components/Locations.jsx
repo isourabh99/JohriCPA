@@ -6,87 +6,103 @@ import { FaAnglesDown } from "react-icons/fa6";
 
 function Locations() {
   return (
-    <div className="w-full py-10 px-6 md:px-20 bg-zinc-50 ">
+    <section className="w-full py-10 px-6 lg:px-24 bg-zinc-50">
+      {/* Scroll Indicator */}
       <a
         href="#map"
-        className="flex items-center justify-center text-2xl bg-[#0a56ab] w-fit mx-auto rounded-full text-blue-100 p-2 mb-4 animate-bounce"
+        className="flex items-center justify-center text-2xl bg-[#0a56ab] w-fit mx-auto rounded-full text-blue-100 p-2 animate-bounce"
       >
         <FaAnglesDown />
       </a>
 
-      <h2
-        className="text-3xl md:text-4xl font-semibold text-center text-[#0a56ab] mb-12"
-        id="map"
-      >
-        We Are Serving from 3 Locations
+      {/* Main Heading */}
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0a56ab] mb-12">
+        Our Office Locations
       </h2>
 
       {/* Maps Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-        <iframe
-          className="w-full h-96 rounded-lg border-none"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.4424793164233!2d-79.56738118450035!3d43.786545051218206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3e1c3a55779d%3A0x1cb96bfb4b188db3!2s4000%20Steeles%20Ave%20W%20Suite%20200%2C%20Woodbridge%2C%20ON%20L4L%204V9%2C%20Canada!5e0!3m2!1sen!2sca!4v1682448917517!5m2!1sen!2sca"
-          allowFullScreen=""
-          loading="lazy"
-        ></iframe>
-        {/* <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.4964479158652!2d-80.49471671547141!3d43.387551995110634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c0bdc08f39c9d%3A0x66762a90ba97c498!2s124%20Seabrook%20Dr%2C%20Kitchener%2C%20ON%20N2R%200K1%2C%20Canada!5e0!3m2!1sen!2sin!4v1746685542058!5m2!1sen!2sin"
-          width="600"
-          height="450"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe> */}
-        <iframe
-          className="w-full h-96 rounded-lg border-none"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.4964479158652!2d-80.49471671547141!3d43.387551995110634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c0bdc08f39c9d%3A0x66762a90ba97c498!2s124%20Seabrook%20Dr%2C%20Kitchener%2C%20ON%20N2R%200K1%2C%20Canada!5e0!3m2!1sen!2sin!4v1746685542058!5m2!1sen!2sin"
-          allowFullScreen=""
-          loading="lazy"
-        ></iframe>
+      <div id="map" className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="space-y-4">
+          <h3 className="text-xl font-semibold text-gray-800">
+            Woodbridge Office
+          </h3>
+          <iframe
+            className="w-full h-96 rounded-lg border-none shadow-lg"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.4424793164233!2d-79.56738118450035!3d43.786545051218206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3e1c3a55779d%3A0x1cb96bfb4b188db3!2s4000%20Steeles%20Ave%20W%20Suite%20200%2C%20Woodbridge%2C%20ON%20L4L%204V9%2C%20Canada!5e0!3m2!1sen!2sca!4v1682448917517!5m2!1sen!2sca"
+            allowFullScreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div className="space-y-4">
+          <h3 className="text-xl font-semibold text-gray-800">
+            Kitchener Office
+          </h3>
+          <iframe
+            className="w-full h-96 rounded-lg border-none shadow-lg"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.4964479158652!2d-80.49471671547141!3d43.387551995110634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c0bdc08f39c9d%3A0x66762a90ba97c498!2s124%20Seabrook%20Dr%2C%20Kitchener%2C%20ON%20N2R%200K1%2C%20Canada!5e0!3m2!1sen!2sin!4v1746685542058!5m2!1sen!2sin"
+            allowFullScreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
       </div>
 
-      {/* Contact Info Section */}
-      <div className=" mx-auto  text-gray-800">
-        <p className="font-semibold text-gray-600 mb-2">
-          Head Office - Woodbridge
-        </p>
-        <p>4000 Steeles Ave W Suite 200, Woodbridge, ON L4L 4V9, Canada</p>
-        <p className="font-semibold text-gray-600 my-2">Kitchener Office</p>
-        <p>109-124 Seabrook Drive Kitchener ON N2R 0R7, Canada</p>
-        <p className="font-semibold text-gray-600 my-2">Brampton</p>
-        <p>Available by appointment only</p>
-        <a
-          href="#"
-          className="flex items-center gap-2 text-[#0a56ab] font-medium mt-2"
-        >
-          View on Map <FaArrowRight />
-        </a>
+      {/* Contact Information Section */}
+      <div className="mx-auto ">
+        <h3 className="text-2xl font-bold text-gray-800 mb-8 text-center">
+          Contact Information
+        </h3>
 
-        <p className="font-semibold mt-6 text-gray-600">Email</p>
-        <Link
-          to="#"
-          className="flex gap-2 items-center text-gray-700 hover:text-[#0a56ab] transition"
-        >
-          <SiGmail />
-          info@johricpa.ca
-        </Link>
+        {/* Email Section */}
+        <div className="text-left mb-8">
+          <h4 className="font-semibold  mb-4 text-[#0a56ab]">
+            Email Us
+          </h4>
+          <Link
+            to="#"
+            className="flex gap-2 items-center text-gray-700 hover:text-[#0a56ab] transition-colors"
+          >
+            <SiGmail className="text-xl" />
+            info@johricpa.ca
+          </Link>
+        </div>
 
-        <p className="font-semibold mt-6 text-gray-600">Phone Number</p>
-        <p className="flex items-center gap-2 text-gray-700">
-          <FaPhoneAlt />
-          905-605-5272 Woodbridge
-        </p>
-        <p className="flex items-center gap-2 text-gray-700">
-          <FaPhoneAlt />
-          905-230-0115 Brampton
-        </p>
-        <p className="flex items-center gap-2 text-gray-700">
-          <FaPhoneAlt />
-          519-513-2423 Kitchener
-        </p>
+        {/* Office Addresses with Contact Numbers */}
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="space-y-3">
+            <h4 className="font-semibold text-[#0a56ab]">
+              Head Office - Woodbridge
+            </h4>
+            <p className="text-gray-600">
+              4000 Steeles Ave W Suite 200, Woodbridge, ON L4L 4V9, Canada
+            </p>
+            <p className="flex items-center gap-2 text-gray-700">
+              <FaPhoneAlt className="text-[#0a56ab]" />
+              <span>905-605-5272</span>
+            </p>
+          </div>
+
+          <div className="space-y-3">
+            <h4 className="font-semibold text-[#0a56ab]">Kitchener Office</h4>
+            <p className="text-gray-600">
+              109-124 Seabrook Drive Kitchener ON N2R 0R7, Canada
+            </p>
+            <p className="flex items-center gap-2 text-gray-700">
+              <FaPhoneAlt className="text-[#0a56ab]" />
+              <span>519-513-2423</span>
+            </p>
+          </div>
+
+          <div className="space-y-3">
+            <h4 className="font-semibold text-[#0a56ab]">Brampton Office</h4>
+            <p className="text-gray-600">Available by appointment only</p>
+            <p className="flex items-center gap-2 text-gray-700">
+              <FaPhoneAlt className="text-[#0a56ab]" />
+              <span>905-230-0115</span>
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -21,7 +21,7 @@ const sections = [
 
 function MissionVisionTeam() {
   return (
-    <section className="bg-white px-6 md:px-24 py-16 w-full">
+    <section className="bg-white px-6 lg:px-24 py-16 w-full">
       <div className="grid md:grid-cols-3 gap-8">
         {sections.map((section, idx) => (
           <div

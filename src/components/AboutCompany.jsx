@@ -4,7 +4,7 @@ import Dynamiclist from "./Dynamiclist";
 import aboutcompany from "../assets/aboutcompany.png"
 function AboutCompany() {
   return (
-    <div className="px-6 md:px-24 md:my-10 py-10 flex flex-col lg:flex-row items-start justify-between w-full">
+    <div className="px-6 lg:px-24 md:my-10 py-10 flex flex-col lg:flex-row items-start justify-between w-full gap-20">
       {/* Left Section */}
       <div className="left w-full lg:w-1/2 mb-8 lg:mb-0">
         <Curveimg

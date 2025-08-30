@@ -4,7 +4,7 @@ import whychoosejohri from "../assets/whychoosejohri.png";
 
 function WhyChooseJohri() {
   return (
-    <div className="px-6 md:px-24 md:my-10 py-10 flex flex-col lg:flex-row items-center justify-between w-full">
+    <div className="px-6 lg:px-24 md:my-10 py-10 gap-20 flex flex-col lg:flex-row items-center justify-between w-full">
       {/* Left Section */}
       <div className="left w-full lg:w-1/2 mb-8 lg:mb-0">
         <Curveimg rounded={"bl"} src={whychoosejohri} />

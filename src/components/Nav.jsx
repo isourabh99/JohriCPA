@@ -1,4 +1,4 @@
-import React, { useState ,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo2.png";
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -11,6 +11,7 @@ function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isDesktopServicesOpen, setIsDesktopServicesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,8 +52,10 @@ function Nav() {
 
   return (
     <nav
-      className={`py-1 px-6 top-10 md:px-24 flex items-center justify-between text-white fixed z-50 w-full transition-all duration-300 ${
-        isScrolled ? "bg-white/80 shadow-md backdrop-blur opacity-80" : "bg-white"
+      className={`py-1 px-6 top-10 lg:px-24 flex items-center justify-between text-white fixed z-50 w-full transition-all duration-300 ${
+        isScrolled
+          ? "bg-white/80 shadow-md backdrop-blur opacity-80"
+          : "bg-white"
       }`}
     >
       {/* Logo */}
@@ -64,16 +67,25 @@ function Nav() {
         {navitems.map((item, idx) =>
           item.list ? (
             <div className="relative group" key={idx}>
-              <span className="cursor-pointer flex items-center gap-2">
+              <span
+                className="cursor-pointer flex items-center gap-2"
+                onClick={() => setIsDesktopServicesOpen(!isDesktopServicesOpen)}
+              >
                 {item.title}
                 <IoMdArrowDropdown />
               </span>
-              <ul className="absolute z-50 left-0 bg-gray-100 w-60 hidden group-hover:block">
+              <ul
+                className={`absolute z-50 left-0 bg-gray-100 w-60 ${
+                  isDesktopServicesOpen ? "block" : "hidden"
+                } group-hover:block`}
+              >
                 {item.list.map((subitem, subidx) => (
                   <Link
                     to={subitem.path}
                     key={subidx}
-                    onClick={() => setIsDropdownOpen(false)}
+                    onClick={() => {
+                      setIsDesktopServicesOpen(false);
+                    }}
                   >
                     <li className="hover:bg-[#0a56ab] cursor-pointer hover:text-white p-2">
                       {subitem.name}
@@ -131,7 +143,7 @@ function Nav() {
           </div>
           {navitems.map((item, idx) =>
             item.list ? (
-              <div key={idx}>
+              <div key={idx} className="w-full">
                 {/* Toggle dropdown on click */}
                 <div
                   className="cursor-pointer flex items-center gap-2 text-3xl justify-center text-white"
@@ -141,7 +153,7 @@ function Nav() {
                   <IoMdArrowDropdown />
                 </div>
                 {isDropdownOpen && (
-                  <ul className="bg-gray-100 w-full mx-auto">
+                  <ul className="bg-gray-100 w-full mx-auto text-black">
                     {item.list.map((subitem, subidx) => (
                       <Link
                         to={subitem.path}

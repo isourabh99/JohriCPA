@@ -51,7 +51,7 @@ function Footer() {
   };
 
   return (
-    <footer className="bg-[#0a56ab] text-white py-10 px-6 md:px-24">
+    <footer className="bg-[#0a56ab] text-white py-10 px-6 lg:px-24">
       <ToastContainer
         position="top-right"
         stacked
@@ -224,7 +224,18 @@ function Footer() {
 
       {/* Footer Bottom */}
       <div className="border-t border-white/20 pt-10 text-center text-sm text-zinc-400">
-        © 2025 Johri CPA Professional Corporation. All Rights Reserved.
+        © 2025 Johri CPA Professional Corporation. All Rights Reserved. 
+        <div>
+          Catered by{" "}
+          <a
+            href="https://www.navtekdigital.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-zinc-100 hover:underline"
+          >
+            Navtek Digital
+          </a>
+        </div>
       </div>
     </footer>
   );

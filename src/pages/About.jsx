@@ -9,8 +9,6 @@ import OurDifference from "../components/OurDifference";
 import MissionVisionTeam from "../components/MissionVisionTeam";
 
 function About() {
-
-
   return (
     <>
       {/* Add SEO component for page-specific meta data */}
@@ -45,7 +43,7 @@ function About() {
         <section id="our-difference">
           <OurDifference />
         </section>
-<MissionVisionTeam/>
+        <MissionVisionTeam />
         {/* Who We Serve Section */}
         <section id="who-we-serve">
           <WhoWeServe />

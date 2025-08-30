@@ -2,7 +2,7 @@ import React from 'react'
 import workprocess from "../assets/workprocess4.png"
 function WorkProcess() {
   return (
-    <div className="px-6 w-full md:px-24 ">
+    <div className="px-6 w-full lg:px-24 ">
       <h1 className="text-[#0a56ab] text-center  font-semibold text-2xl md:text-3xl">
         Work Process
       </h1>

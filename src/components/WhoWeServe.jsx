@@ -1,36 +1,36 @@
-import React from 'react'
+import React from "react";
 import Card from "../components/Card";
-import accountingcard  from "../assets/accountingcard.jpg"
+import accountingcard from "../assets/accountingcard.jpg";
 import businessincorporationcard from "../assets/businessincorporationcard.jpg";
 import taxationcard from "../assets/taxationcard.jpg";
 import managementcard from "../assets/managementcard.jpg";
 function WhoWeServe() {
-   const cards = [
-     {
-       src: accountingcard,
-       title: "Accounting",
-       desc: "If your current accounting and bookkeeping aren’t working for all your needs, it might be time for a change. A streamlined, professional approach can save time, reduce errors, and provide clearer financial insight.",
-       to: "/services/accounting",
-     },
-     {
-       src: businessincorporationcard,
-       title: "Business Incorporation",
-       desc: "Starting a new business is both exciting and overwhelming. From paperwork to tax planning, we help you incorporate smoothly and set a solid foundation for growth.",
-       to: "/services/business-incorporation",
-     },
-     {
-       src: taxationcard,
-       title: "Taxation",
-       desc: "Whether personal or business, handling taxes can be frustrating and time-consuming. We simplify the process, ensure compliance, and help maximize your returns.",
-       to: "/services/taxation",
-     },
-     {
-       src: managementcard,
-       title: "Management Consulting",
-       desc: "Looking for expert management consulting in Brampton? We offer strategic insights and tailored solutions to help your business operate more efficiently and grow sustainably.",
-       to: "/services/management-consulting ",
-     },
-   ];
+  const cards = [
+    {
+      src: accountingcard,
+      title: "Accounting",
+      desc: "If your current accounting and bookkeeping aren't working for all your needs, it might be time for a change. A streamlined, professional approach can save time, reduce errors, and provide clearer financial insight.",
+      to: "/services/accounting",
+    },
+    {
+      src: businessincorporationcard,
+      title: "Business Incorporation",
+      desc: "Starting a new business is both exciting and overwhelming. From paperwork to tax planning, we help you incorporate smoothly and set a solid foundation for growth.",
+      to: "/services/business-incorporation",
+    },
+    {
+      src: taxationcard,
+      title: "Taxation",
+      desc: "Whether personal or business, handling taxes can be frustrating and time-consuming. We simplify the process, ensure compliance, and help maximize your returns.",
+      to: "/services/taxation",
+    },
+    {
+      src: managementcard,
+      title: "Management Consulting",
+      desc: "Looking for expert management consulting in Brampton? We offer strategic insights and tailored solutions to help your business operate more efficiently and grow sustainably.",
+      to: "/services/management-consulting ",
+    },
+  ];
 
   return (
     <div className="bg-[#F3F2F7]  py-10 my-10">
@@ -40,7 +40,7 @@ function WhoWeServe() {
       <p className=" text-center font-semibold md:text-xl mb-10 mt-4">
         All-in-One Accounting & Tax Services
       </p>
-      <div className="px-6 md:px-24 flex justify-between  flex-col md:flex-row w-full">
+      <div className="px-6 lg:px-24 grid grid-cols-1 md:grid-cols-2 lg:flex lg:justify-between gap-6 md:gap-8 lg:gap-20 w-full">
         {cards.map((card, idx) => (
           <Card
             key={idx}
@@ -55,4 +55,4 @@ function WhoWeServe() {
   );
 }
 
-export default WhoWeServe
+export default WhoWeServe;

@@ -14,7 +14,7 @@ import Footer from "./components/Footer";
 import TopContactMarquee from "./components/TopContactMarquee";
 import USTaxFilling from "./pages/USTaxFilling";
 import ScrollToTop from "./hooks/ScrollToTop";
-
+import Nav2 from "./components/Nav2";
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
       <Router>
         <TopContactMarquee />
         <Nav />
+        {/* <Nav2/> */}
     <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Home />} />

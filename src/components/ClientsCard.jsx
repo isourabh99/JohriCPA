@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 
 function ClientsCard({ src, desc, rating = 0, client, time }) {
   return (
-    <div className="relative w-full md:w-[20vw] bg-white rounded overflow-hidden hover:shadow-lg transition duration-300 ease-in-out cursor-pointer shadow p-2 py-4 h-[50vh]">
+    <div className="relative w-full lg:w-[20vw] bg-white rounded overflow-hidden hover:shadow-lg transition duration-300 ease-in-out cursor-pointer shadow p-2 py-4 h-[50vh]">
       <div className="flex items-center justify-between">
         <ImQuotesLeft color="#0a56ab" />
         <span className="text-gray-400">{time}</span>

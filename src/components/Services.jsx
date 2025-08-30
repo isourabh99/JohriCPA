@@ -3,7 +3,7 @@ import React from "react";
 
 function Services({ title, welcomeMessage, introduction, services }) {
   return (
-    <div className="px-6 md:px-24 my-10 ">
+    <div className="px-6 lg:px-24 my-10 ">
       <p className="text-[#0a56ab]   font-semibold text-2xl md:text-4xl">
         {title}
       </p>

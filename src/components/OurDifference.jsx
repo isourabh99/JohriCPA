@@ -5,7 +5,7 @@ import { FaCheckCircle } from 'react-icons/fa';
 
 function OurDifference() {
   return (
-    <div className="bg-white px-6 md:px-24 py-16 w-full">
+    <div className="bg-white px-6 lg:px-24 py-16 w-full">
       {/* Top section: Side-by-side */}
       <div className="flex flex-col lg:flex-row gap-8 items-start ">
         {/* Image */}

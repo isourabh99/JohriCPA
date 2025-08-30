@@ -29,7 +29,7 @@ function RecentBlogs() {
     {
       src: success,
       title: `Succession Planning: A will for your business`,
-      desc: `The unfortunate reality is most business owners don’t take proper holidays. Usually this is because Welcome most business owners don’t take propermost business owners don’t take proper `,
+      desc: `The unfortunate reality is most business owners don't take proper holidays. Usually this is because Welcome most business owners don't take propermost business owners don't take proper `,
       postedByDp:
         "https://i.pinimg.com/474x/ca/8a/ca/ca8acae43c6cd08b09f5c66f90abed71.jpg",
       postedByName: `Sourabh Soni`,
@@ -38,93 +38,81 @@ function RecentBlogs() {
     },
   ];
 
-  return (
-    <div className="px-6 md:px-24  my-10">
-      <h1 className="text-[#0a56ab] text-center  font-semibold text-2xl md:text-3xl  my-10">
-        Recent Blogs
-      </h1>
-      <div className="flex flex-col md:flex-row justify-between gap-10 ">
-        <div className="left md:w-[70%] flex flex-col justify-between   gap-10">
-          {blogs.slice(0, 2).map((blog, idx) => (
-            <div
-              className="w-full md:h-60 bg-white p-2 border-2 rounded border-gray-200 flex md:flex-row flex-col gap-4 overflow-hidden shadow "
-              key={idx}
-            >
-              <img
-                src={blog.src}
-                alt="Blog article visual preview"
-                loading="lazy"
-                className="md:w-70 rounded object-center object-cover"
-              />
-              <div className="md:w-[60%]">
-                <p className="text-2xl md:text-3xl font-semibold mb-4">
-                  {blog.title}
-                </p>
-                <p className=" my-4 text-gray-400">
-                  {blog.desc}
-                  <Link to={blog.to} className="text-[#0a56ab] font-semibold">
-                    read more...
-                  </Link>
-                </p>
-                <div className="flex gap-4 items-center my-4">
-                  <img
-                    src={blog.postedByDp}
-                    alt={`Profile picture of ${blog.postedByName}`}
-                    loading="lazy"
-                    className="h-7 w-7 md:w-10 md:h-10 rounded-full object-center object-cover"
-                  />
-                  <div className="md:my-2">
-                    <p className="text-xs md:text-lg font-semibold">
-                      {blog.postedByName}
-                    </p>
-                    <p className="text-xs md:text-md text-gray-400">
-                      {blog.postedOn}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
+  const BlogCard = ({ blog, isFeatured = false }) => (
+    <div
+      className={`w-full bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md ${
+        isFeatured ? "h-full" : "md:h-[280px]"
+      }`}
+    >
+      <div
+        className={`flex ${
+          isFeatured ? "flex-col" : "md:flex-row flex-col"
+        } gap-4 p-4`}
+      >
+        <div className={`${isFeatured ? "w-full" : "md:w-[40%] w-full"}`}>
+          <img
+            src={blog.src}
+            alt="Blog article visual preview"
+            loading="lazy"
+            className="w-full h-[200px] md:h-full rounded-lg object-cover"
+          />
         </div>
-        <div className="right md:w-[30%] flex justify-end">
-          {blogs[2] && (
-            <div className=" h-full bg-white p-2 border-2 rounded border-gray-200 flex  flex-col gap-4 overflow-hidden shadow ">
-              <img
-                src={blogs[2].src}
-                alt="Blog preview"
-                loading="lazy"
-                className="h-50 w-full object-center object-cover"
-              />
-              <p className="text-xs md:text-2xl font-semibold mb-4">
-                {blogs[2].title}
+        <div
+          className={`${
+            isFeatured ? "w-full" : "md:w-[60%] w-full"
+          } flex flex-col justify-between`}
+        >
+          <div>
+            <h2 className="text-xl md:text-2xl font-semibold mb-3 line-clamp-2">
+              {blog.title}
+            </h2>
+            <p className="text-gray-600 text-sm md:text-base mb-4 line-clamp-3">
+              {blog.desc}
+              <Link
+                to={blog.to}
+                className="text-[#0a56ab] font-semibold ml-1 hover:underline"
+              >
+                read more...
+              </Link>
+            </p>
+          </div>
+          <div className="flex items-center gap-3 mt-auto">
+            <img
+              src={blog.postedByDp}
+              alt={`Profile picture of ${blog.postedByName}`}
+              loading="lazy"
+              className="h-10 w-10 rounded-full object-cover"
+            />
+            <div>
+              <p className="text-sm md:text-base font-semibold">
+                {blog.postedByName}
               </p>
-              <p className="text-md md:text-md my-2 text-gray-400">
-                {blogs[2].desc}
-                <Link to={blogs[2].to} className="text-[#0a56ab] font-semibold">
-                  read more...
-                </Link>
+              <p className="text-xs md:text-sm text-gray-500">
+                {blog.postedOn}
               </p>
-              <div className="flex gap-4 items-center ">
-                <img
-                  src={blogs[2].postedByDp}
-                  alt="User profile picture"
-                  loading="lazy"
-                  className="h-7 w-7 md:w-10 md:h-10 rounded-full object-center object-cover"
-                />
-                <div className="md:my-2">
-                  <p className="text-xs md:text-lg font-semibold">
-                    {blogs[2].postedByName}
-                  </p>
-                  <p className="text-xs md:text-md text-gray-400">
-                    {blogs[2].postedOn}
-                  </p>
-                </div>
-              </div>
             </div>
-          )}
+          </div>
         </div>
       </div>
     </div>
+  );
+
+  return (
+    <section className="px-4 sm:px-6 lg:px-24 py-12">
+      <h1 className="text-[#0a56ab] text-center font-semibold text-2xl md:text-3xl mb-10">
+        Recent Blogs
+      </h1>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="lg:col-span-2 space-y-6">
+          {blogs.slice(0, 2).map((blog, idx) => (
+            <BlogCard key={idx} blog={blog} />
+          ))}
+        </div>
+        <div className="lg:col-span-1">
+          {blogs[2] && <BlogCard blog={blogs[2]} isFeatured={true} />}
+        </div>
+      </div>
+    </section>
   );
 }
 

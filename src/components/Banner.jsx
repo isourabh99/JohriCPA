@@ -13,7 +13,7 @@ function Banner({
   desc2,
 }) {
   return (
-    <div className="relative w-full h-[35vh] md:h-[60vh] mt-34">
+    <div className="relative w-full h-[45vh] lg:h-[60vh] mt-34">
       <img
         src={src}
         rel="preload"
@@ -22,7 +22,7 @@ function Banner({
         className="w-full h-full object-cover object-top"
       />
 
-      <div className="absolute top-0 w-full h-full bg-[#0c3666a5] text-white px-6 md:px-24 md:py-8">
+      <div className="absolute top-0 w-full h-full bg-[#0c3666a5] text-white px-6 lg:px-24 md:py-8">
         {/* Heading */}
         {heading && (
           <p className="text-2xl md:text-5xl font-semibold tracking-tighter mt-10  ">

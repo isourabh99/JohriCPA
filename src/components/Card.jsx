@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Card({ src, title, desc,to }) {
   return (
-    <div className="relative w-full md:w-[20vw] bg-white rounded-lg overflow-hidden hover:shadow-lg transition duration-300 ease-in-out cursor-pointer">
+    <div className="relative w-full lg:w-[20vw] bg-white rounded-lg overflow-hidden hover:shadow-lg transition duration-300 ease-in-out cursor-pointer">
       <Link
         to={to}
         className="bg-white px-4 py-1 rounded-full absolute right-0 m-2 hover:opacity-80 transition-all duration-500 ease-in-out"
